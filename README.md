@@ -260,7 +260,7 @@ def get_married(person)
     if person.class != Person
       begin
         raise PartnerError
-      rescue PartnerError => error
+      rescue => PartnerError => error
           puts error.message
       end
     else
